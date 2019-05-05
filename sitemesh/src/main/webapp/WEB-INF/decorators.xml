@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<decorators defaultdir="/WEB-INF/views/decorator/">
+
+    <decorator name="main" page="layout.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+    
+    <decorator name="board" page="boardlayout.jsp">
+    	<pattern>/board</pattern>
+		<pattern>/board/*</pattern>
+    </decorator>
+    
+	<!-- 예외 설정 -->    
+    <excludes>
+        <pattern></pattern>
+    </excludes>
+</decorators>
+
+
